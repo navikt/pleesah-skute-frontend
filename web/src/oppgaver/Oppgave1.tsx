@@ -7,9 +7,12 @@ export const Oppgave1 = () => {
     <Oppgaveside
       overskrift="Oppgave 1 - Sjøsette skuta"
       oppgavetekst={<ReactMarkdown>{oppgave1Tekst}</ReactMarkdown>}
-      hint1="https://kubernetes.io/docs/reference/kubectl/generated/kubectl_apply/"
-      hint2="kubectl apply -f <FILNAVN>"
-      oppgaveknapp={{ oppgavenummer: 2, lenketekst: "Neste oppgave!" }}
+      hint={{
+        hint1:
+          "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_apply/",
+        hint2: "kubectl apply -f <FILNAVN>",
+      }}
+      nesteOppgavenummer={2}
     />
   );
 };
