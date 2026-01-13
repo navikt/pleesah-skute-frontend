@@ -11,21 +11,26 @@ interface OppgaveProps {
     hint4?: string;
     hint5?: string;
   };
-  nesteOppgavenummer: number;
+  oppgavenummer: number;
 }
 
 export const Oppgaveside = ({
   overskrift,
   oppgavetekst,
   hint,
-  nesteOppgavenummer,
+  oppgavenummer,
 }: OppgaveProps) => {
   return (
     <>
-      <h1>{overskrift}</h1>
+      <Link to={"/"}>Tilbake til forsiden</Link>
+      <h1>
+        Oppgave {oppgavenummer} - {overskrift}
+      </h1>
+
       {oppgavetekst}
+
       {hint && (
-        <div className={"hint_container"}>
+        <div className="hint_container">
           {hint.hint1 && (
             <button onClick={() => alert(hint.hint1)}>Hint 1</button>
           )}
@@ -43,8 +48,25 @@ export const Oppgaveside = ({
           )}
         </div>
       )}
-      <div className="startlink">
-        <Link to={`/oppgaver/${nesteOppgavenummer}/`}>Neste oppgave!</Link>
+
+      <div className="lenke_container">
+        {oppgavenummer > 0 && (
+          <Link
+            to={`/oppgaver/${oppgavenummer - 1}/`}
+            className="lenke_forrige"
+          >{`<- Forrige oppgave!`}</Link>
+        )}
+
+        {oppgavenummer < 6 && (
+          <Link
+            to={`/oppgaver/${oppgavenummer + 1}/`}
+            className="lenke_neste"
+          >{`Neste oppgave! ->`}</Link>
+        )}
+
+        {oppgavenummer === 6 && (
+          <Link to={`/ferdig/`} className="lenke_neste">{`Ferdig!`}</Link>
+        )}
       </div>
     </>
   );

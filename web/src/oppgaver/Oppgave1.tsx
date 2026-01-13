@@ -5,14 +5,14 @@ import ReactMarkdown from "react-markdown";
 export const Oppgave1 = () => {
   return (
     <Oppgaveside
-      overskrift="Oppgave 1 - Sjøsette skuta"
+      overskrift="Sjøsette skuta"
       oppgavetekst={<ReactMarkdown>{oppgave1Tekst}</ReactMarkdown>}
       hint={{
         hint1:
           "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_apply/",
         hint2: "kubectl apply -f <FILNAVN>",
       }}
-      nesteOppgavenummer={2}
+      oppgavenummer={1}
     />
   );
 };

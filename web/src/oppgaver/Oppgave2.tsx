@@ -5,7 +5,7 @@ import ReactMarkdown from "react-markdown";
 export const Oppgave2 = () => {
   return (
     <Oppgaveside
-      overskrift="Oppgave 2 - Flyter skuta?"
+      overskrift="Flyter skuta?"
       oppgavetekst={<ReactMarkdown>{oppgave2Tekst}</ReactMarkdown>}
       hint={{
         hint1:
@@ -17,7 +17,7 @@ export const Oppgave2 = () => {
           "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_describe/",
         hint5: "kubectl describe pods <DIN SKUTE>",
       }}
-      nesteOppgavenummer={3}
+      oppgavenummer={2}
     />
   );
 };

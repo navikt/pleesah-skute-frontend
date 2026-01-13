@@ -5,7 +5,7 @@ import oppgave3Tekst from "./oppgavetekster/oppgave3Tekst.md?raw";
 export const Oppgave3 = () => {
   return (
     <Oppgaveside
-      overskrift="Oppgave 3 - Sjekke logger"
+      overskrift="Sjekke logger"
       oppgavetekst={<ReactMarkdown>{oppgave3Tekst}</ReactMarkdown>}
       hint={{
         hint1:
@@ -14,7 +14,7 @@ export const Oppgave3 = () => {
           "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_logs/",
         hint3: "kubectl logs <DIN SKUTE> \n",
       }}
-      nesteOppgavenummer={4}
+      oppgavenummer={3}
     />
   );
 };
