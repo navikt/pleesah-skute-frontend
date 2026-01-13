@@ -38,6 +38,9 @@ export const Oppgaveside = ({
           {hint.hint4 && (
             <button onClick={() => alert(hint.hint4)}>Hint 4</button>
           )}
+          {hint.hint5 && (
+            <button onClick={() => alert(hint.hint5)}>Hint 5</button>
+          )}
         </div>
       )}
       <div className="startlink">
