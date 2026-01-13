@@ -1,13 +1,7 @@
 import './App.css'
-import {Link, Route, Routes} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 import {Oppgave1} from './oppgaver/oppgave_1.tsx'
-
-const Forside = () => {
-    return (<>
-        <h1>Pleesah Game</h1>
-        <Link to="/oppgaver/1/">Start oppgave 1</Link>
-    </>)
-}
+import {Forside} from "./Forside.tsx";
 
 const App =() => {
     return (<>
