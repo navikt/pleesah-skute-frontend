@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Forside } from "./Forside.tsx";
+import { Forside } from "./pages/Forside.tsx";
 import { Oppgave0 } from "./oppgaver/Oppgave0.tsx";
 import { Oppgave1 } from "./oppgaver/Oppgave1.tsx";
 import { Oppgave2 } from "./oppgaver/Oppgave2.tsx";

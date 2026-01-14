@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
-import forside from "./oppgaver/oppgavetekster/forside.md?raw";
-import PleesahLogo from "./assets/PleesahLogo.png";
+import forside from "./forside.md?raw";
+import PleesahLogo from "../assets/PleesahLogo.png";
 
 export const Forside = () => {
   return (

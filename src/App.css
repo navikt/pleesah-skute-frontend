@@ -19,14 +19,14 @@
   grid-template-columns: auto auto;
   font-size: 22px;
   margin-top: 2rem;
-
 }
-    .lenke_neste {
-        grid-column: 2;
-        display: flex;
-        justify-content: end;
-    }
-    .lenke_forrige {
-        grid-column: 1;
 
-    }
+.lenke_neste {
+  grid-column: 2;
+  display: flex;
+  justify-content: end;
+}
+
+.lenke_forrige {
+  grid-column: 1;
+}

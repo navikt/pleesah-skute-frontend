@@ -21,4 +21,3 @@ spec:
 Hvis du har gjort alt riktig så skal du ha fått følgende respons i terminalen, og du kan gå videre til neste oppgave.
 
 `pod/<DIN SKUTE> created`
-
