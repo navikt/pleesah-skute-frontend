@@ -17,11 +17,21 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24.x'
+
       - name: Check changed files
         id: changed-files
         uses: "nais/what-changed@main"
         with:
           files: .nais/app.yaml
+
+      - name: Pnpm install
+        run: pnpm install
+
+      - name: Pnpm build
+        run: pnpm build
 
       - name: Build and push image and SBOM to OCI registry
         if: steps.changed-files.outputs.changed != 'only-inputs'
