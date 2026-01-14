@@ -5,7 +5,10 @@
 }
 
 .pleesah_logo {
-  height: 30rem;
+  height: 20rem;
+  width: auto;
+  display: flex;
+  justify-self: center;
 }
 
 .hint_container {
@@ -14,7 +17,7 @@
   margin-top: 2rem;
 }
 
-.lenke_container {
+.lenke {
   display: grid;
   grid-template-columns: auto auto;
   font-size: 22px;

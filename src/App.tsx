@@ -9,12 +9,14 @@ import { Oppgave4 } from "./oppgaver/Oppgave4.tsx";
 import { Oppgave5 } from "./oppgaver/Oppgave5.tsx";
 import { Oppgave6 } from "./oppgaver/Oppgave6.tsx";
 import { Ferdig } from "./oppgaver/Ferdig.tsx";
+import { Prerequisites } from "./pages/Prerequisites.tsx";
 
 const App = () => {
   return (
     <BrowserRouter basename="/pleesah">
       <Routes>
         <Route path="/" element={<Forside />} />
+        <Route path="/prerequisites/" element={<Prerequisites />} />
         <Route path="/oppgaver/0/" element={<Oppgave0 />} />
         <Route path="/oppgaver/1/" element={<Oppgave1 />} />
         <Route path="/oppgaver/2/" element={<Oppgave2 />} />

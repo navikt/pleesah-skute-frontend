@@ -49,7 +49,7 @@ export const Oppgaveside = ({
         </div>
       )}
 
-      <div className="lenke_container">
+      <div className="lenke">
         {oppgavenummer > 0 && (
           <Link
             to={`/oppgaver/${oppgavenummer - 1}/`}

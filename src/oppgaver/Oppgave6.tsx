@@ -1,6 +1,6 @@
 import { Oppgaveside } from "../pages/Oppgaveside.tsx";
 import ReactMarkdown from "react-markdown";
-import oppgave6Tekst from "./oppgavetekster/oppgave5Tekst.md?raw";
+import oppgave6Tekst from "./oppgavetekster/oppgave6Tekst.md?raw";
 
 export const Oppgave6 = () => {
   return (
