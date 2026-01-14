@@ -7,7 +7,7 @@ metadata:
     team: leesah-quiz
 spec:
   image: {{image}}
-  port: 4321
+  port: 3000
   ingresses:
     - "https://leesah.io/pleesah"
   resources:
