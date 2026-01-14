@@ -18,4 +18,4 @@ Hvis alt har gått som det skal vil du finne en lignende linje nederst i `events
 Warning Unhealthy 4m7s (x64 over 13m) kubelet spec.containers{lasterommet}: Readiness probe failed: HTTP probe failed with statuscode: 501
 ```
 
-Du kan også se at `Containers.lasterommet.Ready` er satt til `false`.
+Du kan også se at ```Containers.lasterommet.Ready``` er satt til `false`.

@@ -19,9 +19,9 @@ spec:
 Det er ikke alle ressurser som kan oppdateres, og `pod` er en av disse. For å oppdatere skuta med `apply`, må du først
 slette den (senke den, om du vil) før du kan kjøre `apply` på nytt.
 
-`kubectl delete pod <DIN SKUTE>`
+```kubectl delete pod <DIN SKUTE>```
 
-Det kan ta noen sekunder før poden er slettet. Når den er slettet vil du få opp en beskjed `pod "<DIN SKUTE>" deleted` .
+Det kan ta noen sekunder før poden er slettet. Når den er slettet vil du få opp en beskjed ```pod "<DIN SKUTE>" deleted``` .
 
 Kubernetes har flere forskjellige `probes`, og en annen `probe` som er mye brukt er `liveness probe` for å sjekke om
 `containeren` er i live.
