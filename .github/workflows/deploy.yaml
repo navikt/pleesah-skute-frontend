@@ -38,12 +38,12 @@ jobs:
       - name: Pnpm build
         run: pnpm build
 
-      - name: Build and push image and SBOM to OCI registry
-        if: steps.changed-files.outputs.changed != 'only-inputs'
-        uses: nais/docker-build-push@v0
-        id: docker-build-push
-        with:
-          team: leesah-quiz
+#      - name: Build and push image and SBOM to OCI registry
+#        if: steps.changed-files.outputs.changed != 'only-inputs'
+#        uses: nais/docker-build-push@v0
+#        id: docker-build-push
+#        with:
+#          team: leesah-quiz
 
       - name: Deploy to Nais
         uses: nais/deploy/actions/deploy@v2
