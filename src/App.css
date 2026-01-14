@@ -30,3 +30,16 @@
 .lenke_forrige {
   grid-column: 1;
 }
+
+pre {
+  background-color: antiquewhite;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+code {
+  background-color: antiquewhite;
+  border-radius: 0.5rem;
+  width: fit-content;
+  padding: 0.1rem;
+}

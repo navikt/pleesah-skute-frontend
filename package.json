@@ -8,7 +8,8 @@
     "build": "node_modules/.bin/tsc -b && vite build",
     "lint": "node_modules/.bin/eslint .",
     "preview": "node_modules/.bin/vite preview",
-    "prod": "pnpm build && node server.mjs"
+    "prod": "build && node server.mjs",
+    "prettier": "prettier . --write"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
