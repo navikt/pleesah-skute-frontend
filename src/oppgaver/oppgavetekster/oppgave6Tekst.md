@@ -18,7 +18,7 @@ spec:
   template:
     metadata:
       labels:
-        seilskip:brigg
+        seilskip: brigg
     spec:
       containers:
         - name: lasterommet
