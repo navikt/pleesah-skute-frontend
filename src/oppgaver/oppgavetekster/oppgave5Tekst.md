@@ -1,6 +1,8 @@
-Hurra! Du har kastet loss og er klar til å plyndre! Men hvor skal vi, egentlig? Koordinatene finner du i en
-hemmelighet! I K8s kan hemmeligheter lagres i ressurstypen `secrets`. Disse kan inneholde forskjellig typer data, men
-i dette tilfellet finnes det kun én nøkkel skuta trenger for å sette kurs mot riktig destinasjon. Skip o’hoi!
+Hurra! Du har kastet loss og er klar til å plyndre!
+
+Men hvor skal vi, egentlig? Koordinatene finner du i en
+hemmelighet! I k8s kan hemmeligheter lagres i ressurstypen `secrets`. Disse kan inneholde forskjellig typer data, men
+i dette tilfellet finnes det kun én nøkkel skuta trenger for å sette kurs mot riktig destinasjon.
 
 ```
 spec:
@@ -13,4 +15,4 @@ spec:
             key: KOORDINATER
 ```
 
-Kursen er satt, og du er endelig på vei til din destinasjon!
+Kursen er satt, og du er endelig på vei til din destinasjon! Skip o’hoi!

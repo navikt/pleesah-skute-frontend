@@ -1,5 +1,5 @@
 Skuta er fortsatt fortøyd til havna og er ikke klar til å seile til sjøs. Du må kaste loss slik at skuta er klar for
-å seile. Skuta krever at en miljøvariabel HAR_KASTET_LOSS er satt til 'true'.
+å seile. Skuta krever at en miljøvariabel `HAR_KASTET_LOSS` er satt til `true`.
 
 For denne oppgaven har vi laget en forenklet sjekk som ser etter en spesifikk miljøvariabel før den rapporterer at den
 er klar til Kubernetes. Derfor må du oppdatere yaml-filen din til å sette miljøvariabelen `HAR_KASTET_LOSS` til `true`.

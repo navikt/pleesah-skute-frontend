@@ -5,7 +5,9 @@ som finnes. Derfor starter vi med en enkel oppgave hvor vi skal se at det ikke f
 Som nevnt tidligere brukes `namespace` for å holde ressurser adskilt. Dette gjør at man enkelt kan styre rettigheter,
 tilganger, og kommunikasjon på tvers av avhengigheter. I Pleesah skiller vi mellom de forskjellige teamene,
 slik at dere ikke går i beina på hverandre.
+
 For å sikre oss at alt er riktig, så sjekker vi at det ikke allerede finnes en `pod` i vårt `namespace`.
+
 For å liste opp ressurser bruker vi kommandoen `get` og navnet på ressurstypen vi vil liste opp, som i vår oppgave er `pod`.
 
 ```
