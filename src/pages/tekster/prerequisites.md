@@ -1,6 +1,5 @@
 ## Før du spiller må du ha:
 
-- Colima installert : `brew install colima`
 - IDE (Velg hva du liker)
 - Ha noe kjennskap til .yaml-filer
 - Kubectl : `brew install kubectl`
@@ -9,27 +8,12 @@
 
 ```kubectl [KOMMANDO] [RESSURSTYPE] [RESSURSNAVN] [FLAGG]```
 
-## Før spillet kan du kjøre disse kommandoene for å komme igang
+## For å komme igang
 
-1. Sette opp ditt lokale Kubernetes `cluster`:
+- [Besøk nettsiden](https://pleesah.ansatt.dev.nav.no/)
+- Lag en fil som heter config og lim inn
+- kjør kommanoen ```export KUBECONFIG=./config``` i terminalen din
 
-   ```colima kubernetes start```
-
-2. Sette opp ditt lokale namespace:
-
-   ```kubectl create namespace <DITT LAGNAVN>```
-
-3. Lag en hemmelighet
-
-   ```kubectl create secret generic koordinatene-mine --from-literal=KOORDINATER="59.9124° N, 10.7962° E"```
-
-4. Bytt til riktig context
-
-   ```kubectl config set-context pleesah```
-
-5. Bytt til ditt namespace
-
-   ```kubectl config set-context —current —namespace=<DITT LAGNAVN>```
 
 ## Tips og triks
 
