@@ -10,7 +10,7 @@ export const Oppgave0 = () => {
       hint={{
         hint1:
           "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_get/",
-        hint2: "kubectl get pods <DIN SKUTE>",
+        hint2: "kubectl get pods",
       }}
       oppgavenummer={0}
     />

@@ -12,7 +12,7 @@ export const Oppgave2 = () => {
           "https://kubernetes.io/docs/concepts/configuration/liveness-readiness-startup-probes/",
         hint2:
           "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_get/",
-        hint3: "kubectl get pods <DIN SKUTE>",
+        hint3: "kubectl get pods",
         hint4:
           "https://kubernetes.io/docs/reference/kubectl/generated/kubectl_describe/",
         hint5: "kubectl describe pods <DIN SKUTE>",
