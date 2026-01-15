@@ -1,4 +1,5 @@
 ## Hei og velkommen til Pleesah Game!
+
 ### Piratversjonen av Livet Er En Strøm Av Hendelser.
 
 Her skal du lære om Kubernetes. Målet med kurset er å gi et lite innblikk i hva Kubernetes er, hva man kan gjøre med Kubernetes og hvordan. Her har du mulighet til å prøve deg frem, feile og prøve på nytt!
@@ -20,4 +21,3 @@ Havnesjefen kan holde skuter flytende eller senke de om hen ønsker, og holder s
 - Mannskap - Teamets deltakere
 - Armada - Mange skuter/En gruppe av flere pods
 - Radiotårn - Service
-
