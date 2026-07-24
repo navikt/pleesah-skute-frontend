@@ -2,6 +2,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import dotenv from "dotenv";
 import express from "express";
+import { createProxyMiddleware } from "http-proxy-middleware";
 
 dotenv.config();
 
@@ -16,6 +17,14 @@ app.use(basePath, express.static(buildPath, { index: false }));
 app.get([`${basePath}/isAlive`, `${basePath}/isReady`], (req, res) => {
     res.send("OK");
 });
+
+app.use(
+    process.env.API_PATH,
+    createProxyMiddleware({
+        target: process.env.API_URL,
+        changeOrigin: true,
+    }),
+);
 
 app.use(/^(?!.*\/(internal|static)\/).*$/, (req, res) =>
     res.sendFile(`${buildPath}/index.html`),
