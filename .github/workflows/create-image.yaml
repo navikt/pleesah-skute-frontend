@@ -1,0 +1,42 @@
+name: Build and deploy
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    name: Build, push and deploy
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: "read"
+      id-token: "write"
+      actions: "read"
+
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "24.x"
+
+      - name: Pnpm install
+        run: pnpm install
+
+      - name: Pnpm build
+        run: pnpm build
+
+      - name: Build and push image and SBOM to OCI registry
+        uses: nais/docker-build-push@v0
+        id: docker-build-push
+        with:
+          team: leesah
